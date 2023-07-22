@@ -6,15 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
 
+    <!-- Fonts Link Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Tailwind CDN Link Here -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Costom CSS -->
+    <style>
+        .bebas-neue {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
 </head>
 
-<body>
+<body class="roboto text-neutral-700 leading-7">
     <!-- Header Section Start -->
-    <header>
-
+    <header class="bg-[#FFFBF0]">
+        <div class="container mx-auto">
+            <!-- Menu Section Start -->
+            <div class="menu-section flex justify-between items-center pt-7 px-4 sm:px-0 gap-2">
+                <!-- Logo -->
+                <div class="logo w-48 sm:w-72">
+                    <a href="#">
+                        <img src="/assets/icons/logo.png" alt="Penguin Fashion logo">
+                    </a>
+                </div>
+                <!-- Mobile Menu -->
+                <div class=" mobile-menu sm:hidden">
+                    <img src="assets/icons/menu-icon.png" alt="" class="cursor-pointer">
+                </div>
+                <!-- Main Menu -->
+                <div class=" main-menu hidden sm:block">
+                    <ul class="flex md:gap-14 gap-6">
+                        <li><a class="font-medium" href="#">Home</a></li>
+                        <li><a class="font-medium" href="#">Product</a></li>
+                        <li><a class="font-medium" href="#">About us</a></li>
+                        <li><a class="font-medium" href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Menu Section End -->
+        </div>
     </header>
     <!-- Header Section End -->
     <!-- Main Section Start -->
